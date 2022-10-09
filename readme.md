@@ -12,12 +12,15 @@ URL do curso -> [Cypress: Automação de Testes E2E](https://cursos.alura.com.br
 
 ## Links Úteis &#x1F517;
 * [Cypress](https://www.cypress.io/) - Site oficial do software do cypress.
+* [Alura Pic](alura-fotos.herokuapp.com) - Site do projeto em que serão feito os testes.
 
 ## Siglas &#x1F5FA;
 *
 
 ## Atalhos &#x2328;
 *
+
+***
 
 ## 01 - Introdução ao Cypress &#x1F516;
 * Iniciar um novo projeto usando o NodeJS, através do comando npm init, inicializando o arquivo package.json.
@@ -32,3 +35,11 @@ URL do curso -> [Cypress: Automação de Testes E2E](https://cursos.alura.com.br
 
 ### 02 - Criando o Primeiro Teste
 * Criar o primeiro arquivo de teste personalizado.
+
+***
+
+## 02 - Interação com Elementos HTML &#x1F516;
+* Criar uma nova suite de testes, criando um novo arquivo com a extensão .spec.js dentro da pasta integration.
+* Utilizar com mais detalhes as ferramentas de desenvolvedor (DevTools) do navegador para explorar e identificar os elementos com que o Cypress irá interagir.
+* Utilizar o comando `cy.contains()` para procurar por um texto dentro de um seletor, facilitando a busca por um elemento.
+* Criar novos casos de teste, incluindo a `função it()`. Não há limites para a quantidade de testes incluídos.
