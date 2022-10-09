@@ -1,0 +1,14 @@
+{
+  "name": "cypress-project",
+  "version": "1.0.0",
+  "description": "Curso da Alura sobre o uso da ferramenta do Cypress e como executar testes automatizados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.9.0"
+  }
+}
