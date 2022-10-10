@@ -4,11 +4,13 @@
   "description": "Curso da Alura sobre o uso da ferramenta do Cypress e como executar testes automatizados.",
   "main": "index.js",
   "scripts": {
+    "__comment": "The command 'npx cypress run' run the cypress in background, and show a report in the line console, with a video included",
     "test": "npx cypress open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.9.0"
+    "cypress": "^10.9.0",
+    "mochawesome": "^7.1.3"
   }
 }

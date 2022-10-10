@@ -1,0 +1,3 @@
+Realizar testes em modo headless significa não precisar de uma interface gráfica para interagir com o navegador. Consequentemente, os testes rodam mais rapidamente e podem ser executados a partir de ferramentas de integração contínua como [Jenkins](https://www.jenkins.io/) ou dentro de um container [Docker](https://www.docker.com/), por exemplo.
+
+Para executar os testes em headless mode, utilizamos o comando `cypress run`. Esse comando pode ter variação de acordo com o gerenciador de pacotes utilizado (NPM ou Yarn) . Para maiores detalhes, pode-se consultar a [documentação oficial do Cypress](https://docs.cypress.io/guides/guides/command-line).
