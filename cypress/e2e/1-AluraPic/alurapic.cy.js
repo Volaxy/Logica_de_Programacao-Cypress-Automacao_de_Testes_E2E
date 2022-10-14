@@ -61,7 +61,6 @@ describe("Registration and Login in the Alurapic website", () => {
     });
 
     // Login with invalid username
-    // To test only some tests, put the ".only" after the "it"
     it("Login with a Invalid username", () => {
         cy.login("test", "1234");
 
@@ -75,5 +74,35 @@ describe("Registration and Login in the Alurapic website", () => {
         cy.login("flavio", "123");
 
         cy.contains("a", "(Logout)").should("be.visible");
+    });
+
+    // Login with Flavio
+    it.only("Login with Flavio", () => {
+        cy.request({
+            method: "POST",
+            url: "https://apialurapic.herokuapp.com/user/login",
+            body: Cypress.env()
+        }).then((res) => {
+            expect(res.status).to.be.equal(200);
+            expect(res.body).is.not.empty;
+            expect(res.body).to.have.property("id");
+            expect(res.body.id).to.be.equal(1);
+        });
+    });
+
+    // Register New User
+    const users = require("../../fixtures/users.json");
+    users.forEach(user => {
+        it.only(`Register new user: ${user.userName}`, () => {
+            cy.contains("a", "Register now").click();
+            cy.contains("button", "Register").click();
+            
+            cy.get("input[formcontrolname='email'").type(user.email);
+            cy.get("input[formcontrolname='fullName'").type(user.fullName);
+            cy.get("input[formcontrolname='userName'").type(user.userName);
+            cy.get("input[formcontrolname='password'").type(user.password);
+    
+            cy.contains("button", "Register").click();
+        });
     });
 });

@@ -46,7 +46,7 @@ URL do curso -> [Cypress: Automação de Testes E2E](https://cursos.alura.com.br
 
 ***
 
-## 03 - Mais Recursos do Cypress
+## 03 - Mais Recursos do Cypress &#x1F516;
 * Executar os testes em modo headless, sem abrir a interface gráfica do Cypress.
 * Verificar os relatórios e vídeos gerados ao executar testes em modo headless.
 * Utilizar o comando `npm i -D mochawesome` para instalar o pacote do **Mochawesome**.
@@ -54,3 +54,15 @@ URL do curso -> [Cypress: Automação de Testes E2E](https://cursos.alura.com.br
 * Gerar o relatório do **Mochawesome** com o comando `npx cypress run --reporter mochawesome`.
 * Utilizar o Dashboard para integrar os resultados dos testes e ter uma visão mais analítica e completa dos dados.
 * Criar novos comandos personalizados, de acordo com a necessidade e referenciá-los como se fossem comando nativos do Cypress, como por exemplo: `cy.login()`, `cy.registrar()` ou da forma que considerar melhor.
+
+***
+
+## 04 - Mais Possibilidades de Teste &#x1F516;
+* Utilizar dados de um arquivo externo nos casos de teste, fornecendo uma massa de dados.
+* Utilizar a função require para obter dados de um módulo ou arquivo externo.
+* Utilizar a função `forEach` para iterar sobre uma coleção de elementos e não precisar replicar código.
+* Fazer testes em API’s REST, verificando o status e corpo da resposta, bem como outros comportamentos.
+* Usar o comando `cy.request()` e usar o `.expect` para fazer as asserções dos resultados esperados.
+* Cuidados ao testar dados sensíveis, para não expor o conteúdo a quem não poderia ter acesso.
+* Criar arquivo cypress.env.json para configurar variáveis de ambiente.
+* Usar o comando `{logs: false}` na função que faz a digitação para omitir os dados que não podem ser mostrados.
