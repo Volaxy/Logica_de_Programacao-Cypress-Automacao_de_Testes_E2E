@@ -1,0 +1,1 @@
+Dados que usam o mesmo valor (como uma URL), são melhor aproveitados quando estão sendo referenciados por uma variável que armazena esse valor, economizando reescrita e complexidade de código.

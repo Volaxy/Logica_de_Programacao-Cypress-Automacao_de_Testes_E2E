@@ -5,6 +5,8 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
     },
+    // This line creates a variable with the value of the URL to be referenced in each test file through the "/"
+    "baseUrl": "https://alura-fotos.herokuapp.com"
   },
   reporter: "mochawesome",
   reporterOptions: {

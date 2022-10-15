@@ -1,0 +1,1 @@
+É importante separar cada página do site como um arquivo de testes separados, para facilitar a compreensão quando os testes executarem. Ao organizar os códigos de teste, menos tempo será necessário para a manutenção dos códigos.

@@ -66,3 +66,12 @@ URL do curso -> [Cypress: Automação de Testes E2E](https://cursos.alura.com.br
 * Cuidados ao testar dados sensíveis, para não expor o conteúdo a quem não poderia ter acesso.
 * Criar arquivo cypress.env.json para configurar variáveis de ambiente.
 * Usar o comando `{logs: false}` na função que faz a digitação para omitir os dados que não podem ser mostrados.
+
+***
+
+## 05 - Padronização e Boas Práticas &#x1F516;
+* Organizar os testes separando-os por funcionalidades afins, para melhorar a manutenção e legibilidade do código.
+* Qual o conceito dos flaky tests e algumas maneira de evitá-los, como por exemplo:evitar eventos orientados a tempo, dependência de aplicações de terceiros, testes que podem ser quebrados por processamento concorrente.
+* Boas práticas na escrita dos testes para melhorar performance e segurança.
+* O conceito de mocks e stubs e a importância de usá-los.
+* A importância em já pensar em boas práticas de escrita, organização e performance desde a concepção do projeto de testes.
